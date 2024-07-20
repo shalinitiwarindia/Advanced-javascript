@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function</title>
+    <style>
+        h1{
+            background-color: green;
+        }
+        h2{
+            background-color: aqua;
+        }
+        h3{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+  <h1>Amar lives in Goa</h1> 
+  <h2>Akbar lives in Mumbai</h2> 
+  <h3>Anthony lives in Kashmir</h3>  
+</body>
+</html>
+<script>
+    let Amar={
+        name:"Amar",
+        profession:"singer",
+        lives:"Goa",
+
+        skills: function(skill){
+            console.log(` ${this.name} is singing ${skill} song in ${this.lives}` );
+        },
+    };
+
+    let Akbar={
+        name:"Akbar",
+        profession:"engineer",
+        lives:"Mumbai",
+
+          
+    };
+    let Anthony={
+        name:"Anthony",
+        profession:"teaching",
+        lives:"Kashmir",
+        skills: function(skill){
+            console.log(` ${this.name} is teaching ${skill} in ${this.lives}` );
+        },
+    };
+
+    Amar.skills("bollywood");
+    
+    Amar.skills.call(Akbar," Krishna Bhajans");
+    Anthony.skills("Computer Science");
+    Anthony.skills.call(Amar,"Information Technology")
+</script>
