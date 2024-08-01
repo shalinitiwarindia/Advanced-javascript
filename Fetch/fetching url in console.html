@@ -1,0 +1,23 @@
+//fetching with url in console
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fetch</h1>
+</body>
+</html>
+<script>
+fetch(`https://reqres.in/api/users?page=2`)
+.then(function (res){
+    res.json().then(function(res){
+        console.log('res:',res.data)
+    })
+})
+.catch(function(err){
+    console.log('err:',err)
+})
+</script>
