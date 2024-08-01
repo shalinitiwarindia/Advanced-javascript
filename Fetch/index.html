@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Online Store</h1>
+</body>
+</html>
+<script>
+    const url=`https://fakestoreapi.com/products`;
+
+    fetch(url)
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(res){
+        console.log("res",res);
+    })
+    .catch(function(err){
+        console.log("err:",err);
+    });
+</script>
