@@ -1,5 +1,5 @@
 
-const API="AIzaSyD85F2Vt3-ykW-f8N0r3OlBeDRHpbteHFM";
+const API=""; //your API key
 
 const searchVideos=async()=> {
     try {
