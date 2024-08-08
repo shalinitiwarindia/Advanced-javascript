@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce Admin Panel</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            
+        }
+       #productForm{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding-left: 30px;
+    }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        .product img {
+            width: 100%;
+            height: 100%;
+        }
+        .sold {
+            background-color: red;
+            color: white;
+        }
+        .not-sold {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1><u>Admin Panel</u></h1>
+    
+    <form id="productForm">
+        <h2>Add New Product</h2>
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" required><br><br>
+
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Unisex">Unisex</option>
+        </select><br><br>
+
+        <label for="sold">Sold:</label>
+        <input type="checkbox" id="sold"><br><br>
+
+        <button type="button" id="add">Add Product</button>
+    </form>
+    <h2>Product Listing</h2>
+    <div id="counter">Total Products: 0</div>
+    <div id="productContainer"></div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
