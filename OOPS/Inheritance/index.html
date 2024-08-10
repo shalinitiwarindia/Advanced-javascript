@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Oriented Programming</h1>
+    <h3>Inheritance</h3>
+</body>
+</html>
+<script>
+    class Cat{
+        constructor(n,c){
+            this.name=n,
+            this.color=c;
+        }
+    }
+    class tiger extends Cat{
+        constructor(n,c){
+            super(n,c);
+            this.speed=true;
+        }
+    }
+
+    let a1=new tiger("tiger","yellow",true);
+    console.log("a1:",a1);
+</script>
