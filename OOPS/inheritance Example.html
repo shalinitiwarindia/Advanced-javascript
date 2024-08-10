@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Oriented Programming</h1>
+</body>
+</html>
+<script>
+    class Vehicle{
+        constructor(n,c){
+            this.name=n,
+            this.color=c;
+        }
+    }
+    class car extends Vehicle{
+        constructor(n,c){
+            super(n,c);
+            this.speed=true;
+        }
+    }
+
+    let c1=new car("BMW","black",true);
+    console.log("c1:",c1);
+</script>
