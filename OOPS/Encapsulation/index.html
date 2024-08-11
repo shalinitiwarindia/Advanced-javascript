@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Encapsulation</h1>
+</body>
+</html>
+<script>
+    class Employees{
+        constructor(){
+            var name;
+            var rating;
+        }
+        getName(){
+            return this.name;
+        }
+        getRating(){
+            return this.rating;
+        }
+        setName(value){
+            this.name=value;
+        }
+        setRating(value){
+            this.rating=value;
+        }
+    }
+    let e1=new Employees();
+    e1.setName("Name is Babu,");
+    e1.setRating("Rating-20");
+    console.log(e1.getName(),e1.getRating());
+</script>
