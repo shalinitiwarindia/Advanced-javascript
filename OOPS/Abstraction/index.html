@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Abstraction</h1> 
+</body>
+</html>
+<script>
+    class Employees{
+        constructor(n,r){
+            this.name=n;
+            this.rating=r;
+            this.skills=[];
+        }
+        learnSkill(skill){
+            this.skills.push(skill);
+        }
+    }
+    let e1=new Employees("Baburav",999);
+    e1.learnSkill("oops");
+    console.log("e1:",e1);
+</script>
