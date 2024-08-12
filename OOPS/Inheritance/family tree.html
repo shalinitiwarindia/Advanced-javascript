@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Family Tree</h1>
+</body>
+</html>
+<script>
+    class Family{
+        constructor(n,a,o){
+            this.name=n;
+            this.age=a;
+            this.occupation=o;
+        }
+    }
+
+    class Father extends Family{
+        constructor(n,a,o){
+            super(n,a,o);
+        }
+    }
+
+    class Mother extends Father{
+        constructor(n,a,o){
+            super(n,a,o);
+        }
+    }
+    let father=new Father("John","45","Engineer");
+    let mother=new Mother("Rina","40","Professor");
+    console.log(father);
+    console.log(mother);
+</script>
