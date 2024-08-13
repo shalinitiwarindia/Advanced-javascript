@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OOPS</h1>
+</body>
+</html>
+<script>
+  class Car{
+  constructor(horsePower){
+    this.horsePower = horsePower;
+    this.fuel = 100;
+  }
+
+  consumeFuel(amount){
+    this.fuel -= amount;
+  }
+}
+let myCar = new Car(102);
+console.log("My Car:",myCar);
+
+</script>
