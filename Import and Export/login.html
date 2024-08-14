@@ -18,23 +18,7 @@
 <script type="module">
 
    
-    let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
-      method: "POST",
-      body: user_data,
-
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    let data = await res.json();
-
-    let username = document.getElementById('username').value;
-    getUserDetail(username, data.token);
-    console.log(data);
-  };
-
-  document.getElementById("submit").addEventListener("click", login);
+   
 
   let getUserDetail = async (username, token) => {
       console.log("here");
