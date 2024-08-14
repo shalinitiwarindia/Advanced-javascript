@@ -30,17 +30,7 @@ let register = async (e) => {
 
     form_data = JSON.stringify(form_data);
 
-    let res = await fetch(
-      "https://masai-api-mocker.herokuapp.com/auth/register",
-      {
-        method: "POST",
-        body: form_data,
-        // mode: "no-cors"
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+   
 
     let data = await res.json();
     console.log(data);
