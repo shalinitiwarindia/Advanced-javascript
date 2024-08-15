@@ -6,10 +6,7 @@ function navbar() {
         <div id="options">
       
       
-        <a href="login.html">Login</a>
-        </h3>
-        </div> 
-    
+     
     `;
 }
 
